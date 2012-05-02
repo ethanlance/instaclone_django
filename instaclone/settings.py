@@ -1,24 +1,9 @@
 # Django settings for tasted project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
-TASTYPIE_FULL_DEBUG = True
+TASTYPIE_FULL_DEBUG = False
 
-# import logging
-# if DEBUG:
-#     # will output to your console
-#     logging.basicConfig(
-#         level = logging.DEBUG,
-#         format = '%(asctime)s %(levelname)s %(message)s',
-#     )
-# else:
-#     # will output to logging file
-#     logging.basicConfig(
-#         level = logging.DEBUG,
-#         format = '%(asctime)s %(levelname)s %(message)s',
-#         filename = '/my_log_file.log',
-#         filemode = 'a'
-#     )
 
 AUTH_PROFILE_MODULE = "userprofile.UserProfile"
 
@@ -30,16 +15,16 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-#         'NAME': 'tasted',                      # Or path to database file if using sqlite3.
-#         'USER': 'postgres',                      # Not used with sqlite3.
-#         'PASSWORD': 'bailey',                  # Not used with sqlite3.
-#         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
-#         'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': '/Users/ethanlance/Sites/instaclone/instaclone_django/data.db',  # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -151,13 +136,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    'django.contrib.admindocs',
+    #'django.contrib.admin',
+    #'django.contrib.admindocs',
     'instaclone.image',
     'instaclone.userprofile',
-    'south'
+    'south',
+    'tastypie'
 )
 
 # A sample logging configuration. The only tangible logging

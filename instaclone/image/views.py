@@ -42,7 +42,7 @@ def login_or_signup(request):
             pass
 
     if not user:
-        user = User.objects.create_user(username, email, password)
+        user = User.objects.create_user(fbid, email, password)
 
     #tastypie api_key
     api = ApiKey.objects.get(user=user)
