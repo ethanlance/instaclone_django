@@ -1,5 +1,7 @@
 instaclone_django
 =================
+This is the web app side of the instaclone ios app (https://github.com/ethanlance/instaclone_ios/blob/master/README.md).  It's not a finished project or a example of best code.  I needed to whip up an REST api to use with the Instaclone iOS app I developed as a learning exercise.
+
 
 
 Also Need:
