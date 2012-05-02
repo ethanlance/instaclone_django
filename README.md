@@ -6,13 +6,13 @@ Also Need:
 ---------
 Amazon S3 account.  If you want to upload images get an account and fill this section of settings.py out:
 
-<code>
+<pre>
 USE_AMAZON_S3 = True
 AWS_ACCESS_KEY = ''
 AWS_SECRET_KEY = ''
 AWS_TEMP_UPLOAD_BUCKET = 'instaclonebucket'
 AWS_TEMP_UPLOAD_DIRECTORY = 'uploads/'
-</code>
+</pre>
 
 
 
