@@ -2,6 +2,20 @@ instaclone_django
 =================
 
 
+Also Need:
+---------
+Amazon S3 account.  If you want to upload images get an account and fill this section of settings.py out:
+
+<code>
+USE_AMAZON_S3 = True
+AWS_ACCESS_KEY = ''
+AWS_SECRET_KEY = ''
+AWS_TEMP_UPLOAD_BUCKET = 'instaclonebucket'
+AWS_TEMP_UPLOAD_DIRECTORY = 'uploads/'
+</code>
+
+
+
 Setup
 -----
 
@@ -19,7 +33,7 @@ Now install all the requirements (like Django and Tastypie):
 
 <code>cd instaclone_django/instaclone</code>
 
-Create our sqllite3 database:
+Create our sqlite3 database:
 
 <code>python manage.py syncdb</code>
 Say "NO" to creating an admin user. Or you'll get an error later on because tastypie will not have created an api_key for this user.  I let the iOS app create the 1st user.

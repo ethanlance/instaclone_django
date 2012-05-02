@@ -4,6 +4,12 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 TASTYPIE_FULL_DEBUG = False
 
+USE_AMAZON_S3 = True
+AWS_ACCESS_KEY = ''
+AWS_SECRET_KEY = ''
+AWS_TEMP_UPLOAD_BUCKET = 'instaclonebucket'
+AWS_TEMP_UPLOAD_DIRECTORY = 'uploads/'
+
 
 AUTH_PROFILE_MODULE = "userprofile.UserProfile"
 
