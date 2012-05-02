@@ -8,8 +8,8 @@ Amazon S3 account.  If you want to upload images get an account and fill this se
 
 <pre>
 USE_AMAZON_S3 = True
-AWS_ACCESS_KEY = ''
-AWS_SECRET_KEY = ''
+AWS_ACCESS_KEY = 'YOU_NEED_THIS'
+AWS_SECRET_KEY = 'AND_YOU_NEED_THIS'
 AWS_TEMP_UPLOAD_BUCKET = 'instaclonebucket'
 AWS_TEMP_UPLOAD_DIRECTORY = 'uploads/'
 </pre>
